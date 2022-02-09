@@ -204,6 +204,13 @@ button:hover::after {
 	-o-transform: scaleX(1);
 	transform-origin: left;
 }
+button:active {
+	transform: scale(0.96);
+	-webkit-transform: scale(0.96);
+	-moz-transform: scale(0.96);
+	-ms-transform: scale(0.96);
+	-o-transform: scale(0.96);
+}
 @media (min-width: 650px) {
 	main {
 		grid-template-columns: 1fr 1fr;
