@@ -110,7 +110,7 @@ input {
 }
 .input {
 	width: 80%;
-	max-width: 500px;
+	max-width: 350px;
 	justify-self: center;
 }
 label {
