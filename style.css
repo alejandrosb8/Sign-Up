@@ -91,10 +91,11 @@ input {
 .main-form {
 	background-color: var(--white);
 	box-shadow: 0 2px 15px #d1d1d1;
-	padding: 20px;
+	padding: 40px;
 	width: 100%;
 }
 .grid-container {
+	width: 100%;
 	display: grid;
 	margin-top: 30px;
 	grid-template-columns: 1fr;
@@ -236,7 +237,9 @@ button:active {
 		margin: auto;
 	}
 	.grid-container {
+		max-width: 1200px;
 		grid-template-columns: 1fr 1fr;
+		margin: auto;
 	}
 	.main-form p {
 		width: 100%;
