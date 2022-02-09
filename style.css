@@ -90,14 +90,16 @@ input {
 }
 .main-form {
 	background-color: var(--white);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
 	box-shadow: 0 2px 15px #d1d1d1;
 	padding: 20px;
-	justify-content: center;
 	width: 100%;
+}
+.grid-container {
+	display: grid;
+	margin-top: 30px;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 25px;
 }
 .main-form p {
 	text-align: center;
@@ -109,6 +111,7 @@ input {
 .input {
 	width: 80%;
 	max-width: 500px;
+	justify-self: center;
 }
 label {
 	font-size: 1.4rem;
@@ -225,13 +228,8 @@ button:hover::after {
 		max-width: 70%;
 		margin: auto;
 	}
-	.main-form {
-		max-width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;
-		row-gap: 30px;
-		column-gap: 10%;
-		padding: 30px;
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
 	}
 	.main-form p {
 		width: 100%;
@@ -240,6 +238,7 @@ button:hover::after {
 		text-decoration: underline var(--primary-color);
 	}
 	.input {
-		max-width: 30%;
+		width: 80%;
+		max-width: 400px;
 	}
 }
